@@ -1,3 +1,3 @@
 # Create Vite Lite
 
-WIP
+> # **DO NOT USE THIS PACKAGE YET**

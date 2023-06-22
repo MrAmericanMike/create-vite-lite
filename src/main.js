@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const prompts = require("prompts");
 const { blue, red, yellow, reset } = require("kolorist");
 

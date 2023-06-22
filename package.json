@@ -1,18 +1,20 @@
 {
 	"name": "create-vite-lite",
-	"version": "0.0.1",
+	"version": "0.0.4",
 	"description": "Create Vite Lite",
 	"author": "MrAmericanMike",
-	"main": "src/main.js",
+	"main": "./src/main.js",
 	"scripts": {
 		"start": "node src/main.js"
 	},
 	"bin": {
-		"create-vite-lite": "src/main.js",
-		"cvl": "src/main.js"
+		"create-vite-lite": "./src/main.js",
+		"cvl": "./src/main.js"
 	},
 	"files": [
-		"src/main.js"
+		"src/main.js",
+		"package.json",
+		"README.md"
 	],
 	"keywords": [
 		"create-vite-lite",

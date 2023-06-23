@@ -1,7 +1,7 @@
 {
-	"name": "vite-lite-vanilla-js",
+	"name": "vite-vanilla-js",
 	"version": "0.0.0",
-	"description": "Vite Lite Vanilla JS",
+	"description": "Vite Vanilla JS",
 	"author": "",
 	"license": "",
 	"main": "./src/index.html",

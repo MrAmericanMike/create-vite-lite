@@ -1,9 +1,10 @@
 {
 	"name": "create-vite-lite",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "Create Vite Lite",
 	"author": "MrAmericanMike",
 	"main": "./src/main.js",
+	"type": "module",
 	"scripts": {
 		"start": "node src/main.js"
 	},
@@ -25,7 +26,7 @@
 		"app"
 	],
 	"license": "MIT",
-	"devDependencies": {
+	"dependencies": {
 		"kolorist": "1.8.0",
 		"prompts": "2.4.2"
 	}

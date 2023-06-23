@@ -15,6 +15,7 @@
 	"files": [
 		"src/main.js",
 		"package.json",
+		"template-*",
 		"README.md"
 	],
 	"keywords": [

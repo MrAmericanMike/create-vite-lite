@@ -1,0 +1,17 @@
+{
+	"name": "vite-lite-vanilla-js",
+	"version": "0.0.0",
+	"description": "Vite Lite Vanilla JS",
+	"author": "",
+	"license": "",
+	"main": "./src/index.html",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"vite": "^4.3.9"
+	}
+}

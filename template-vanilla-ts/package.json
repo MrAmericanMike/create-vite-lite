@@ -1,0 +1,18 @@
+{
+	"name": "vite-vanilla-ts",
+	"version": "0.0.0",
+	"description": "Vite Vanilla TS",
+	"author": "",
+	"license": "",
+	"main": "./src/index.html",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"typescript": "^5.1.3",
+		"vite": "^4.3.9"
+	}
+}

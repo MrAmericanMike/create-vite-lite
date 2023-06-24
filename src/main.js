@@ -18,7 +18,7 @@ const FRAMEWORKS = [
 			},
 			{
 				name: "template-vanilla-ts",
-				display: "TypeScript (not implemented)",
+				display: "TypeScript",
 				color: blue
 			}
 		]

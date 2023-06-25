@@ -25,17 +25,17 @@ const FRAMEWORKS = [
 	},
 	{
 		name: "svelte",
-		display: "Svelte (not implemented)",
+		display: "Svelte",
 		color: red,
 		variants: [
 			{
 				name: "template-svelte-js",
-				display: "JavaScript (not implemented)",
+				display: "JavaScript",
 				color: yellow
 			},
 			{
 				name: "template-svelte-ts",
-				display: "TypeScript (not implemented)",
+				display: "TypeScript",
 				color: blue
 			}
 		]
@@ -155,6 +155,7 @@ function copyDir(sourceDir, destinationDir) {
 }
 
 function doneMessage() {
+	console.log(red("Update package.json accordingly."));
 	const PKG_MANAGER = getPackageManager();
 	if (PKG_MANAGER?.name) {
 		console.log(blue("All done. Run:"));

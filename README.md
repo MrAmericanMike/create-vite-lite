@@ -4,6 +4,24 @@
 
 ---
 
+> ## Usage
+
+Use create on an empty directory (root for your project)
+
+```sh
+npm create vite-lite
+```
+
+```sh
+pnpm create vite-lite
+```
+
+```sh
+yarn create vite-lite
+```
+
+---
+
 > ## What is this package?
 
 The idea of this package is to provide Vite like Scaffolding for different Frameworks.

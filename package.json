@@ -24,7 +24,10 @@
 		"create-vite-app",
 		"create",
 		"vite",
-		"app"
+		"app",
+		"vanilla",
+		"svelte",
+		"lit"
 	],
 	"license": "MIT",
 	"homepage": "https://github.com/MrAmericanMike/create-vite-lite#readme",

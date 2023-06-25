@@ -24,6 +24,23 @@ const FRAMEWORKS = [
 		]
 	},
 	{
+		name: "lit",
+		display: "Lit",
+		color: blue,
+		variants: [
+			{
+				name: "template-lit-js",
+				display: "JavaScript",
+				color: yellow
+			},
+			{
+				name: "template-lit-ts",
+				display: "TypeScript",
+				color: blue
+			}
+		]
+	},
+	{
 		name: "svelte",
 		display: "Svelte",
 		color: red,

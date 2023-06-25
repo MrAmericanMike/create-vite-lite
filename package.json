@@ -1,21 +1,23 @@
 {
 	"name": "create-vite-lite",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"description": "Create Vite Lite",
 	"author": "MrAmericanMike",
 	"main": "./src/main.js",
 	"type": "module",
 	"scripts": {
-		"start": "node src/main.js"
+		"build": "unbuild",
+		"prepublishOnly": "pnpm run build"
 	},
 	"bin": {
 		"create-vite-lite": "./src/main.js",
 		"cvl": "./src/main.js"
 	},
 	"files": [
-		"src/main.js",
+		"src/main.ts",
 		"package.json",
 		"template-*",
+		"dist",
 		"README.md"
 	],
 	"keywords": [
@@ -27,7 +29,8 @@
 		"app",
 		"vanilla",
 		"svelte",
-		"lit"
+		"lit",
+		"react"
 	],
 	"license": "MIT",
 	"homepage": "https://github.com/MrAmericanMike/create-vite-lite#readme",
@@ -43,7 +46,10 @@
 		"prompts": "2.4.2"
 	},
 	"devDependencies": {
-		"typescript": "^5.1.3"
+		"@types/prompts": "^2.4.4",
+		"@types/node": "^18.16.18",
+		"typescript": "^5.1.3",
+		"unbuild": "^1.2.1"
 	}
 }
 

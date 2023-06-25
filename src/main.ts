@@ -5,14 +5,14 @@ import { fileURLToPath } from "node:url";
 import prompts from "prompts";
 import { blue, bold, cyan, red, yellow, reset } from "kolorist";
 
-import type { Framework, FrameworkVariant } from "./types";
+import type { Framework, FrameworkFlavor } from "./types";
 
 const FRAMEWORKS: Framework[] = [
 	{
 		name: "vanilla",
 		display: "Vanilla",
 		color: yellow,
-		variants: [
+		flavors: [
 			{
 				name: "template-vanilla-js",
 				display: "JavaScript",
@@ -29,7 +29,7 @@ const FRAMEWORKS: Framework[] = [
 		name: "lit",
 		display: "Lit",
 		color: blue,
-		variants: [
+		flavors: [
 			{
 				name: "template-lit-js",
 				display: "JavaScript",
@@ -46,7 +46,7 @@ const FRAMEWORKS: Framework[] = [
 		name: "react",
 		display: "React",
 		color: cyan,
-		variants: [
+		flavors: [
 			{
 				name: "template-react-js",
 				display: "JavaScript",
@@ -63,7 +63,7 @@ const FRAMEWORKS: Framework[] = [
 		name: "svelte",
 		display: "Svelte",
 		color: red,
-		variants: [
+		flavors: [
 			{
 				name: "template-svelte-js",
 				display: "JavaScript",
@@ -86,8 +86,8 @@ async function doMagic() {
 	} else {
 		try {
 			const RESPONSE = await getFramework();
-			console.log(`${RESPONSE.framework.display} ${RESPONSE.variant.display}`);
-			const TEMPLATE_DIR = path.resolve(fileURLToPath(import.meta.url), "../..", RESPONSE.variant.name);
+			console.log(`${RESPONSE.framework.display} ${RESPONSE.flavor.display}`);
+			const TEMPLATE_DIR = path.resolve(fileURLToPath(import.meta.url), "../..", RESPONSE.flavor.name);
 			const FILES = fs.readdirSync(TEMPLATE_DIR);
 			for (const FILE of FILES) {
 				writeFile(TEMPLATE_DIR, FILE);
@@ -114,15 +114,15 @@ async function getFramework() {
 				})
 			},
 			{
-				type: (framework) => (framework && framework.variants ? "select" : null),
-				name: "variant",
-				message: reset("Select a variant:"),
+				type: (framework) => (framework && framework.flavors ? "select" : null),
+				name: "flavor",
+				message: reset("Select a flavor:"),
 				choices: (framework) =>
-					framework.variants.map((variant: FrameworkVariant) => {
-						const variantColor = variant.color;
+					framework.flavors.map((flavor: FrameworkFlavor) => {
+						const flavorColor = flavor.color;
 						return {
-							title: variantColor(variant.display),
-							value: { name: variant.name, display: variant.display }
+							title: flavorColor(flavor.display),
+							value: { name: flavor.name, display: flavor.display }
 						};
 					})
 			}
@@ -191,10 +191,9 @@ function copyDir(sourceDir: string, destinationDir: string) {
 }
 
 function doneMessage() {
-	console.log(red("Update package.json accordingly."));
+	console.log(`${blue("All done.")} · ${red("Update package.json accordingly.")}`);
 	const PKG_MANAGER = getPackageManager();
 	if (PKG_MANAGER?.name) {
-		console.log(blue("All done. Run:"));
 		switch (PKG_MANAGER?.name.toLowerCase()) {
 			case "yarn":
 				console.log("  yarn");
@@ -206,9 +205,8 @@ function doneMessage() {
 				break;
 		}
 	} else {
-		console.log(blue("All done."));
-		console.log(`  install dependencies with your package manager`);
-		console.log(`  run dev script to start server`);
+		console.log(`  install dependencies`);
+		console.log(`  run dev script`);
 	}
 }
 

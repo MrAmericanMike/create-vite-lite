@@ -55,4 +55,4 @@ Sure, open an [issue](https://github.com/MrAmericanMike/create-vite-lite/issues)
 
 > ## What Frameworks?
 
-We will be adding more Frameworks. As for now it only includes **Vanilla**, **Lit** and **Svelte**
+We will be adding more Frameworks. As for now it only includes **Vanilla**, **Lit**, **React** and **Svelte**

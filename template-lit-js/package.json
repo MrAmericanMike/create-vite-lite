@@ -1,0 +1,20 @@
+{
+	"name": "vite-lit-js",
+	"version": "0.0.0",
+	"description": "Vite Lit JS",
+	"author": "",
+	"license": "",
+	"main": "./src/index.html",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"lit": "^2.7.5"
+	},
+	"devDependencies": {
+		"vite": "^4.3.9"
+	}
+}

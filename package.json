@@ -27,6 +27,14 @@
 		"app"
 	],
 	"license": "MIT",
+	"homepage": "https://github.com/MrAmericanMike/create-vite-lite#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MrAmericanMike/create-vite-lite.git"
+	},
+	"bugs": {
+		"url": "https://github.com/MrAmericanMike/create-vite-lite/issues"
+	},
 	"dependencies": {
 		"kolorist": "1.8.0",
 		"prompts": "2.4.2"

@@ -44,7 +44,7 @@ const FRAMEWORKS = [
 
 async function doMagic() {
 	console.log(`${blue("Create-Vite-Lite")} ${red("0.0.5")}`);
-	console.log(`${bold(blue("This library is still in beta. Bugs included at no extra charge!"))}`);
+	console.log(`${bold(blue("This package is still in beta. Bugs included at no extra charge!"))}`);
 	if (!isPathEmpty(".")) {
 		return console.log(`❌ ${red("You can only use this script within an empty folder")} ❌`);
 	} else {

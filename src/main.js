@@ -3,7 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import prompts from "prompts";
-import { blue, bold, red, yellow, reset } from "kolorist";
+import { blue, bold, cyan, red, yellow, reset } from "kolorist";
 
 const FRAMEWORKS = [
 	{
@@ -35,6 +35,23 @@ const FRAMEWORKS = [
 			},
 			{
 				name: "template-lit-ts",
+				display: "TypeScript",
+				color: blue
+			}
+		]
+	},
+	{
+		name: "react",
+		display: "React",
+		color: cyan,
+		variants: [
+			{
+				name: "template-react-js",
+				display: "JavaScript",
+				color: yellow
+			},
+			{
+				name: "template-react-ts",
 				display: "TypeScript",
 				color: blue
 			}

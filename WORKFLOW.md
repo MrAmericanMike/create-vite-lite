@@ -23,3 +23,11 @@ Update version on package.json - Commit changes
 Publish to NPM
 
 `npm publish`
+
+---
+
+Unlink the library globally
+
+`pnpm uninstall -g create-vite-lite`
+
+In an empty directory run `pnpm create vite-lite` and see if everything works as expected.

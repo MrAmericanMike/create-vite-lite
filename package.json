@@ -1,6 +1,6 @@
 {
 	"name": "create-vite-lite",
-	"version": "0.0.10",
+	"version": "0.0.11",
 	"description": "Create Vite Lite",
 	"author": "MrAmericanMike",
 	"main": "./src/main.js",
@@ -14,9 +14,9 @@
 		"cvl": "./src/main.js"
 	},
 	"files": [
-		"src/main.ts",
+		"src/main.js",
 		"package.json",
-		"template-*",
+		"template-*/**",
 		"dist",
 		"README.md"
 	],

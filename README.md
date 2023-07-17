@@ -30,14 +30,14 @@ The idea of this package is to provide Vite like Scaffolding for different Frame
 
 > ## Why no use create-vite?
 
-Please feel free to use [create-vite](https://www.npmjs.com/package/create-vite). This lite version is meant to provide you with an ever leaner template.
+Please feel free to use [create-vite](https://www.npmjs.com/package/create-vite). This lite version is meant to provide you with a leaner template.
 
 ---
 
 > ## Why this package exists?
 
-I decided to make this package so when I start a project that will use Vite it comes scaffolded in the way I like to set up the projects. Check the templates folder on the repository to see how they will look.
-This scaffolds also come with a `vite.config.js` Something that create-vite doesn't provide. It also sets different ports, custom output directory and few more things.
+I decided to make this package so when someone starts a project that will use Vite it comes scaffolded in a slightly different way compared to create-vite. Check the templates folder on the [repository](https://github.com/MrAmericanMike/create-vite-lite) to see their structure.
+This scaffolds also come with a `vite.config.js` file, something that create-vite doesn't provide. It also sets different ports and few more things.
 
 ---
 

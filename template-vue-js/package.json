@@ -1,0 +1,21 @@
+{
+	"name": "vue-js",
+	"version": "0.0.0",
+	"description": "Vue JS",
+	"author": "",
+	"license": "",
+	"main": "./src/index.html",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"vue": "^3.3.4"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-vue": "^4.2.3",
+		"vite": "^4.3.9"
+	}
+}

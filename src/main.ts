@@ -3,7 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import prompts from "prompts";
-import { blue, bold, cyan, red, yellow, reset } from "kolorist";
+import { blue, bold, cyan, red, yellow, reset, green } from "kolorist";
 
 import type { Framework, FrameworkFlavor } from "./types";
 
@@ -71,6 +71,23 @@ const FRAMEWORKS: Framework[] = [
 			},
 			{
 				name: "template-svelte-ts",
+				display: "TypeScript",
+				color: blue
+			}
+		]
+	},
+	{
+		name: "vue",
+		display: "Vue",
+		color: green,
+		flavors: [
+			{
+				name: "template-vue-js",
+				display: "JavaScript",
+				color: yellow
+			},
+			{
+				name: "template-vue-ts",
 				display: "TypeScript",
 				color: blue
 			}
@@ -191,7 +208,7 @@ function copyDir(sourceDir: string, destinationDir: string) {
 }
 
 function doneMessage() {
-	console.log(`${blue("All done.")} · ${red("Update package.json accordingly.")}`);
+	console.log(`${blue("All done")} · ${red("Update package.json accordingly")}`);
 	const PKG_MANAGER = getPackageManager();
 	if (PKG_MANAGER?.name) {
 		switch (PKG_MANAGER?.name.toLowerCase()) {

@@ -1,7 +1,7 @@
 {
 	"name": "vue-js",
 	"version": "0.0.0",
-	"description": "Vue JS",
+	"description": "Vite Vue JS",
 	"author": "",
 	"license": "",
 	"main": "./src/index.html",
@@ -16,6 +16,6 @@
 	},
 	"devDependencies": {
 		"@vitejs/plugin-vue": "^4.2.3",
-		"vite": "^4.3.9"
+		"vite": "^4.4.4"
 	}
 }

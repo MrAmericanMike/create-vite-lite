@@ -55,4 +55,14 @@ Sure, open an [issue](https://github.com/MrAmericanMike/create-vite-lite/issues)
 
 > ## What Frameworks?
 
-We will be adding more Frameworks. As for now it only includes **Vanilla**, **Lit**, **React** and **Svelte**
+We will be adding more Frameworks. As for now it only includes **Vanilla**, **Lit**, **Preact**, **React**, **Svelte** and **Vue**
+
+---
+
+# TODO
+
+-   Write tests
+-   Manually test build process for each flavor
+-   Make sure scaffold is consistent across the provided frameworks
+-   Actually set better tsconfig.json files for every framework
+-   Refine which ones need tsconfig.node.json and which one doesn't

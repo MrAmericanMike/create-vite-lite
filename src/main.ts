@@ -3,7 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import prompts from "prompts";
-import { blue, bold, cyan, red, yellow, reset, green } from "kolorist";
+import { blue, bold, cyan, green, magenta, red, yellow, reset } from "kolorist";
 
 import type { Framework, FrameworkFlavor } from "./types";
 
@@ -37,6 +37,23 @@ const FRAMEWORKS: Framework[] = [
 			},
 			{
 				name: "template-lit-ts",
+				display: "TypeScript",
+				color: blue
+			}
+		]
+	},
+	{
+		name: "preact",
+		display: "Preact",
+		color: magenta,
+		flavors: [
+			{
+				name: "template-preact-js",
+				display: "JavaScript",
+				color: yellow
+			},
+			{
+				name: "template-preact-ts",
 				display: "TypeScript",
 				color: blue
 			}

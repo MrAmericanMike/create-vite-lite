@@ -1,0 +1,22 @@
+{
+	"name": "vite-preact-ts",
+	"version": "0.0.0",
+	"description": "Vite Preact TS",
+	"author": "",
+	"license": "",
+	"main": "./src/index.html",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"preact": "^10.16.0"
+	},
+	"devDependencies": {
+		"@preact/preset-vite": "^2.5.0",
+		"typescript": "^5.1.6",
+		"vite": "^4.4.4"
+	}
+}

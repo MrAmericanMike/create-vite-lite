@@ -1,0 +1,21 @@
+{
+	"name": "vite-solid-js",
+	"version": "0.0.0",
+	"description": "Vite Solid JS",
+	"author": "",
+	"license": "",
+	"main": "./src/index.html",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"solid-js": "^1.7.6"
+	},
+	"devDependencies": {
+		"vite": "^4.4.4",
+		"vite-plugin-solid": "^2.7.0"
+	}
+}

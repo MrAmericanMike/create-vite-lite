@@ -1,0 +1,22 @@
+{
+	"name": "vite-solid-ts",
+	"version": "0.0.0",
+	"description": "Vite Solid TS",
+	"author": "",
+	"license": "",
+	"main": "./src/index.html",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"solid-js": "^1.7.6"
+	},
+	"devDependencies": {
+		"typescript": "^5.1.6",
+		"vite": "^4.4.4",
+		"vite-plugin-solid": "^2.7.0"
+	}
+}

@@ -3,7 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import prompts from "prompts";
-import { blue, bold, cyan, green, magenta, red, yellow, reset } from "kolorist";
+import { blue, bold, cyan, green, lightBlue, magenta, red, yellow, reset } from "kolorist";
 
 import type { Framework, FrameworkFlavor } from "./types";
 
@@ -71,6 +71,23 @@ const FRAMEWORKS: Framework[] = [
 			},
 			{
 				name: "template-react-ts",
+				display: "TypeScript",
+				color: blue
+			}
+		]
+	},
+	{
+		name: "solid",
+		display: "Solid",
+		color: lightBlue,
+		flavors: [
+			{
+				name: "template-solid-js",
+				display: "JavaScript",
+				color: yellow
+			},
+			{
+				name: "template-solid-ts",
 				display: "TypeScript",
 				color: blue
 			}

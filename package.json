@@ -1,6 +1,6 @@
 {
 	"name": "create-vite-lite",
-	"version": "0.0.13",
+	"version": "0.0.14",
 	"description": "Create Vite Lite",
 	"author": "MrAmericanMike",
 	"main": "./src/main.js",
@@ -55,4 +55,3 @@
 		"unbuild": "^1.2.1"
 	}
 }
-

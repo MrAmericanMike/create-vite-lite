@@ -104,6 +104,11 @@ const FRAMEWORKS: Framework[] = [
 				color: yellow
 			},
 			{
+				name: "template-svelte-jsdoc",
+				display: "JavaScript / JSDOC",
+				color: lightBlue
+			},
+			{
 				name: "template-svelte-ts",
 				display: "TypeScript",
 				color: blue

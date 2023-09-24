@@ -1,0 +1,21 @@
+{
+	"name": "vite-svelte-jsdoc",
+	"version": "0.0.0",
+	"description": "Vite Svelte JSDOC",
+	"author": "",
+	"license": "",
+	"main": "./src/index.html",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"tsc": "tsc"
+	},
+	"devDependencies": {
+		"@sveltejs/vite-plugin-svelte": "^2.4.5",
+		"svelte": "^4.2.0",
+		"typescript": "^5.2.2",
+		"vite": "^4.4.9"
+	}
+}

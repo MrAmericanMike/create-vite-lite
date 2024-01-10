@@ -1,6 +1,6 @@
 {
 	"name": "create-vite-lite",
-	"version": "0.0.17",
+	"version": "0.0.18",
 	"description": "Create Vite Lite",
 	"author": "MrAmericanMike",
 	"main": "./src/main.js",
@@ -49,9 +49,9 @@
 		"prompts": "2.4.2"
 	},
 	"devDependencies": {
-		"@types/prompts": "^2.4.7",
-		"@types/node": "^20.8.10",
-		"typescript": "^5.2.2",
+		"@types/prompts": "^2.4.9",
+		"@types/node": "^20.10.8",
+		"typescript": "^5.3.3",
 		"unbuild": "^2.0.0"
 	}
 }

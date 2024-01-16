@@ -193,7 +193,7 @@ async function getFramework() {
 }
 
 function renameFile(file: string) {
-	const FILES: Record<string, string | undefined> = {
+	const FILES: Record<string, string> = {
 		_gitignore: ".gitignore"
 	};
 	return FILES[file] ?? file;

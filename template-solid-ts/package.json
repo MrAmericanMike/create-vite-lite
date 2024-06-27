@@ -12,11 +12,11 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"solid-js": "^1.8.16"
+		"solid-js": "^1.8.17"
 	},
 	"devDependencies": {
-		"typescript": "^5.4.2",
-		"vite": "^5.2.2",
+		"typescript": "^5.5.2",
+		"vite": "^5.3.2",
 		"vite-plugin-solid": "^2.10.2"
 	}
 }

@@ -1,9 +1,9 @@
 #!/usr/bin/env node
+import { blue, bold, cyan, green, lightBlue, magenta, red, reset, yellow } from "kolorist";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import prompts from "prompts";
-import { blue, bold, cyan, green, lightBlue, magenta, red, yellow, reset } from "kolorist";
 
 import type { Framework, FrameworkFlavor } from "./types";
 
@@ -135,10 +135,13 @@ const FRAMEWORKS: Framework[] = [
 ];
 
 async function doMagic() {
+	const ARGS = process.argv.slice(2);
+	const FORCE = ARGS.includes("--force");
 	console.log(blue("Create-Vite-Lite"));
 	console.log(bold(blue("This package is still in beta. Bugs included at no extra charge!")));
-	if (!isPathEmpty(".")) {
-		return console.log(`❌ ${red("You can only use this script within an empty folder")} ❌`);
+	if (!isPathEmpty(".") && !FORCE) {
+		console.log(`❌ ${red("You can only use this script within an empty folder")} ❌`);
+		return console.log(`❌ ${yellow(`add ${blue("--force")} if you want to overwrite existing files`)} ❌`);
 	} else {
 		try {
 			const RESPONSE = await getFramework();
